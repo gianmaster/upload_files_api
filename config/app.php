@@ -161,6 +161,12 @@ return [
          */
         Dingo\Api\Provider\LaravelServiceProvider::class,
 
+        /*
+         * Oauth
+         */
+        LucaDegasperi\OAuth2Server\Storage\FluentStorageServiceProvider::class,
+        LucaDegasperi\OAuth2Server\OAuth2ServerServiceProvider::class,
+
     ],
 
     /*
@@ -208,6 +214,8 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
         'Uuid' => Webpatser\Uuid\Uuid::class,
+
+        'Authorizer' => LucaDegasperi\OAuth2Server\Facades\Authorizer::class,
 
     ],
 
