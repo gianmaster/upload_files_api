@@ -15,8 +15,9 @@ class UsersSeeder extends Seeder
         //
         Model::unguard();
 
-        factory(\App\User::class, 50)->create()->each(function($user){
-            $user->posts()->saveMany(factory(\App\Post::class, 25)->make());
+
+        factory(App\User::class, 50)->create()->each(function($user){
+            $user->posts()->saveMany(factory(App\Post::class, 5)->make());
         });
 
         Model::reguard();

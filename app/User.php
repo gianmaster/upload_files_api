@@ -29,6 +29,11 @@ class User extends Authenticatable
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
     public function posts(){
-        return $this->hasMany(Post::class);
+        return $this->hasMany(Post::class, 'user_id', 'id');
     }
+
+    //protected $dateFormat = 'Ymd H:i:s'; //primer solucion. solo guarda, no lee
+    //protected $dateFormat = 'Y-d-m H:i:s';
+    //protected $dateFormat = 'Y-m-d H:i:u';
+
 }

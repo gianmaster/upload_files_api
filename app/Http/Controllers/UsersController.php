@@ -21,7 +21,7 @@ class UsersController extends Controller
      */
     public function index()
     {
-        //return User::all();
+        return User::all();
 
         //convierte la respuesta nativamente en json
         //return $this->response->array(['id' => 1]); // esto con los helpers de dingo
@@ -30,7 +30,9 @@ class UsersController extends Controller
         //return $this->response->collection(User::all(), new UserTransformer());
 
         //retorno de los datos con pagineo
-        return $this->response->paginator(User::paginate(10), new UserTransformer());
+        //return $this->response->paginator(User::paginate(10), new UserTransformer());
+
+        //return $this->response->array(['data' => User::with('posts')->get()]);
     }
 
     /**

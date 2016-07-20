@@ -19,6 +19,10 @@ Route::get('/test', function(){
     return \Webpatser\Uuid\Uuid::generate(4);
 });
 
+Route::get('/usuarios', function(){
+    return App\User::all();
+});
+
 /**
  * Rutas del API - Dingo Implementation
  */
