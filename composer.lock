@@ -4,9 +4,53 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2617c5eb60c102225897bce972e979db",
-    "content-hash": "d9c81b69ec26ddf18387757a426f6b21",
+    "hash": "60ca6b9c1feab23f8cf1dfe852a3a408",
+    "content-hash": "070fbd2c4e484f6891bf573a80ab4a84",
     "packages": [
+        {
+            "name": "anchu/ftp",
+            "version": "v2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/harishanchu/Laravel-FTP.git",
+                "reference": "e0fec2dae79123a7d993afcafa174eb88b45146e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/harishanchu/Laravel-FTP/zipball/e0fec2dae79123a7d993afcafa174eb88b45146e",
+                "reference": "e0fec2dae79123a7d993afcafa174eb88b45146e",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "5.x",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Anchu\\Ftp\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Harish Anchu",
+                    "email": "harishanchu@gmail.com"
+                }
+            ],
+            "description": "A simple Laravel 4/5 ftp service provider",
+            "keywords": [
+                "L4",
+                "ftp",
+                "l5",
+                "laravel",
+                "service provider"
+            ],
+            "time": "2015-05-16 18:29:29"
+        },
         {
             "name": "classpreloader/classpreloader",
             "version": "3.0.0",

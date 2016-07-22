@@ -34,6 +34,7 @@ class User extends Authenticatable
 
     //protected $dateFormat = 'Ymd H:i:s'; //primer solucion. solo guarda, no lee
     //protected $dateFormat = 'Y-d-m H:i:s';
-    //protected $dateFormat = 'Y-m-d H:i:u';
+    //protected $dateFormat = 'Y-m-d H:i:s.u';
+    //protected $dateFormat = "Y-m-d H:i:s+";
 
 }

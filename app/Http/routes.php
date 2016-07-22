@@ -23,6 +23,18 @@ Route::get('/usuarios', function(){
     return App\User::all();
 });
 
+Route::post('/upload', 'FileStorageController@uploadFile');
+
+Route::get('/test_upload', function(){
+   return view('upload_file');
+});
+
+
+Route::post('oauth/access_token', function() {
+    return Response::json(Authorizer::issueAccessToken());
+});
+
+
 /**
  * Rutas del API - Dingo Implementation
  */
@@ -31,8 +43,15 @@ $api->version('v1', function($api){
 
     //$api->group(['namespace' => 'App\Http\Controllers', 'middleware' => 'testing'],
     $api->group(['namespace' => 'App\Http\Controllers'],function($api){
+        $api->post('/auth/authorize-client', 'Auth\OAuthController@authorizeClient');
+        $api->post('/auth/authorize-password', 'Auth\OAuthController@authorizePassword');
 
-        $api->resource('users', 'UsersController');
+        $api->group(['middleware' => 'api.auth'], function($api){
+
+            $api->resource('users', 'UsersController');
+            $api->resource('me', 'ProfileController');
+
+        });
 
     });
 

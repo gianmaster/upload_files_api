@@ -62,6 +62,21 @@ return [
             'bucket' => 'your-bucket',
         ],
 
+
+        'ftp' => [
+            'driver'   => 'ftp',
+            'host'     => 'giancarloscercado.com',
+            'username' => 'root',
+            'password' => 'gian4rock',
+
+            // Optional FTP Settings...
+            //'port'     => 21,
+            //'root'     => '/var/www/html/files_repository',
+            //'passive'  => true,
+            //'ssl'      => true,
+            'timeout'  => 10,
+        ],
+
     ],
 
 ];

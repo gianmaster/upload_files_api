@@ -11,7 +11,8 @@
         "league/fractal": "^0.13.0",
         "webpatser/laravel-uuid": "2.*",
         "lucadegasperi/oauth2-server-laravel": "5.1.*",
-        "prettus/l5-repository": "^2.6"
+        "prettus/l5-repository": "^2.6",
+        "anchu/ftp": "^2.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

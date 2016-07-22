@@ -156,6 +156,8 @@ return [
         App\Providers\AuthServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        //provider creado para oauth2
+        App\Providers\OAuthServiceProvider::class,
 
         /*
          * Dingo
