@@ -40,6 +40,7 @@
     <body>
         <div class="container">
             <div class="content">
+                <div class="title">Estamos en mantenimiento</div>
                 <div class="title">Be right back.</div>
             </div>
         </div>

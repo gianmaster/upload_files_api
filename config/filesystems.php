@@ -65,12 +65,12 @@ return [
 
         'ftp' => [
             'driver'   => 'ftp',
-            'host'     => 'giancarloscercado.com',
-            'username' => 'root',
-            'password' => 'gian4rock',
+            'host'     => '192.168.1.240',
+            'username' => 'sk',
+            'password' => 'ftpadmin',
 
             // Optional FTP Settings...
-            //'port'     => 21,
+            //'port'     => 20,
             //'root'     => '/var/www/html/files_repository',
             //'passive'  => true,
             //'ssl'      => true,

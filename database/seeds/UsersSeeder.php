@@ -20,6 +20,8 @@ class UsersSeeder extends Seeder
             $user->posts()->saveMany(factory(App\Post::class, 5)->make());
         });
 
+        
+
         Model::reguard();
     }
 }

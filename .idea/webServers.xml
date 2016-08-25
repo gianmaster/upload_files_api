@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="8c2dd674-7630-4bb6-b9e0-36ad84bc2f3b" name="avon_desa" url="http://192.168.1.244">
+        <fileTransfer host="192.168.1.244" port="22" rootFolder="/var/www/html" accessType="SFTP" password="dfcbdfcedfc7dfc3dfc4dfeedf99df8edf9e" username="root">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="393604ab-56c6-43d9-9a65-d65e61444cb9" name="gestor_docs" url="http://192.168.1.244">
+        <fileTransfer host="192.168.1.244" port="22" rootFolder="/var/www/html" accessType="SFTP" password="dfcbdfcedfc7dfc3dfc4dfeedf99df8edf9e" username="root">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

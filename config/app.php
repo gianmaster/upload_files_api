@@ -175,6 +175,26 @@ return [
          */
         Prettus\Repository\Providers\RepositoryServiceProvider::class,
 
+        /**
+         * FTP provider
+         */
+        Anchu\Ftp\FtpServiceProvider::class,
+
+        /**
+         * SSH provider
+         */
+        Collective\Remote\RemoteServiceProvider::class,
+
+        /**
+         * FlySystemFTP provider
+         */
+        GrahamCampbell\Flysystem\FlysystemServiceProvider::class,
+
+        /**
+         * CORS
+         */
+        Barryvdh\Cors\ServiceProvider::class,
+
     ],
 
     /*
@@ -224,6 +244,10 @@ return [
         'Uuid' => Webpatser\Uuid\Uuid::class,
 
         'Authorizer' => LucaDegasperi\OAuth2Server\Facades\Authorizer::class,
+
+        'SSH' => Collective\Remote\RemoteFacade::class,
+
+        'Flysystem' => GrahamCampbell\Flysystem\Facades\Flysystem::class,
 
     ],
 

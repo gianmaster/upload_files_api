@@ -30,10 +30,12 @@ class OAuthController extends Controller
      * @return mixed
      */
     public function authorizePassword($username, $password){
+
         $credentials = [
             'email'     => $username,
             'password'  => $password,
         ];
+
 
         if(Auth::once($credentials)){
             return Auth::user()->id;

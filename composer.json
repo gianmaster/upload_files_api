@@ -12,7 +12,12 @@
         "webpatser/laravel-uuid": "2.*",
         "lucadegasperi/oauth2-server-laravel": "5.1.*",
         "prettus/l5-repository": "^2.6",
-        "anchu/ftp": "^2.0"
+        "anchu/ftp": "^2.0",
+        "laravelcollective/remote": "^5.2",
+        "league/flysystem": "^1.0",
+        "league/flysystem-sftp": "^1.0",
+        "graham-campbell/flysystem": "^3.4",
+        "barryvdh/laravel-cors": "^0.8.1"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
